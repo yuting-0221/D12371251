@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>蕭淯庭 • 個人作品集</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #e9f7ff;
+      --card: #ffffff;
+      --accent: #6fb3ff;
+      --muted: #6b7280;
+      --radius: 14px;
+      --maxw: 1100px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:'Noto Sans TC', system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+      background: linear-gradient(180deg,var(--bg), #f6fbff 60%);
+      color:#0f172a;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:32px;
+    }
+    main{
+      width:100%;
+      max-width:var(--maxw);
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow:0 8px 30px rgba(18,52,86,0.08);
+      padding:40px;
+    }
+    header{text-align:center;margin-bottom:40px}
+    h1{margin:0;font-size:32px;color:#1e3a8a}
+    p.subtitle{color:var(--muted);margin-top:8px}
+
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:24px;
+    }
+    .artwork{
+      background:linear-gradient(180deg,#ffffff,#f7fbff);
+      border-radius:var(--radius);
+      overflow:hidden;
+      box-shadow:0 6px 18px rgba(12,44,80,0.04);
+      transition:transform .3s, box-shadow .3s;
+    }
+    .artwork:hover{
+      transform:translateY(-6px);
+      box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    }
+    .artwork img{
+      width:100%;
+      height:auto;
+      display:block;
+    }
+    .caption{
+      padding:14px 16px;
+      text-align:center;
+    }
+    .caption h3{margin:0;font-size:18px;color:#0f172a}
+    .caption p{margin:6px 0 0;font-size:14px;color:var(--muted)}
+
+    footer{
+      text-align:center;margin-top:40px;color:var(--muted);font-size:14px
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>蕭淯庭 • 個人作品集</h1>
+      <p class="subtitle">台南應用科技大學 多媒體動畫系 — 個人創作展示</p>
+    </header>
+
+    <section class="gallery">
+      <div class="artwork">
+        <img src="超現實主義.jpeg" alt="超現實主義作品" />
+        <div class="caption">
+          <h3>時間與記憶的交錯</h3>
+          <p>融合時鐘與人物的意象，表現時間流逝與自我記憶的對話。</p>
+        </div>
+      </div>
+
+      <div class="artwork">
+        <img src="4f955a12-5863-4a21-aa07-9989dc8a7fa4.jpeg" alt="未來鯨魚幻想" />
+        <div class="caption">
+          <h3>未來之海的巨鯨</h3>
+          <p>在科幻城市中漂浮的鯨魚，象徵自然與科技共存的幻想世界。</p>
+        </div>
+      </div>
+
+      <div class="artwork">
+        <img src="c27e142b-67d5-406d-9867-7ba4730f7a01.jpeg" alt="黑之羽" />
+        <div class="caption">
+          <h3>黑之羽</h3>
+          <p>以黑白層次與流動線條，描繪孤獨與自由的抽象情感。</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>D12371251 蕭淯庭 — 個人作品集展示頁</p>
+    </footer>
+  </main>
+</body>
+</html>
+
